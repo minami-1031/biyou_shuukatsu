@@ -114,6 +114,9 @@ header a {
 .main-nav.open-menu {
     width: 100%;
 }
+.logo {
+    width: 100px;
+}
 
 /*ボタン*/
 .btn {
@@ -441,12 +444,7 @@ DESKTOP SIZE
     .news-content {
         padding: 1rem 1rem 1rem 0;
     }
-    #news {
-        background-image: linear-gradient(var(--light-green), var(--green));
-        padding: 7rem 0;
-        -webkit-clip-path: polygon(0 0, 100% 2%, 100% 90%, 0 100%);
-        clip-path: polygon(0 0, 100% 2%, 100% 90%, 0 100%);
-    }
+
 /* Speakers */
     #speakers h2 {
         margin-bottom: 4rem;
@@ -457,4 +455,24 @@ DESKTOP SIZE
     .speakers-text {
         margin-left: 2rem;
     }
+}
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+  #news {
+      background-image: linear-gradient(var(--light-green), var(--green));
+      padding: 7rem 0;
+      -webkit-clip-path: polygon(0 0, 100% 2%, 100% 90%, 0 100%);
+      clip-path: polygon(0 0, 100% 2%, 100% 98%, 0 100%);
+    }
+  #ticket h3 {
+    text-align: left;
+    text-indent: inherit;
+    font-size: 1.7rem;
+    color: var(--black)
+  }
+  #speakers .logo {
+      width: 20%;
+  }
 }
