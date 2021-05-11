@@ -310,6 +310,7 @@ TICKET
 #ticket h2 {
     color: var(--white);
 }
+
 .ticket-form {
     max-width: 480px;
     margin: 0 auto 5rem;
